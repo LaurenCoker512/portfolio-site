@@ -1,9 +1,9 @@
 slidr.create('slidr', {
     breadcrumbs: true,
-    direction: 'horizontal',
-    keyboard: true,
+    controls: "none",
+    direction: 'v',
     fade: true,
+    keyboard: true,
+    theme: "#7d6167",
     transition: 'fade'
 }).start();
-
-console.log("Connected!");

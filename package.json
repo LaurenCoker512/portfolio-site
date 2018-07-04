@@ -9,6 +9,7 @@
   "author": "Lauren Coker",
   "license": "ISC",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.1.0",
     "autoprefixer": "^8.6.3",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",

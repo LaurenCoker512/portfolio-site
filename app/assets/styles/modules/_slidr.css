@@ -1,0 +1,26 @@
+.slidr {
+    height: 60rem;
+    margin: 0 auto;
+    width: 90rem;
+}
+
+.slidr__section {
+    background-color: #fff;
+    height: 100%;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.slidr__labels {
+    bottom: 1.2rem;
+    font-size: 1.3rem;
+    position: absolute;
+    right: 5rem;
+    z-index: 10;
+}
+
+.slidr__labels--active {
+    font-weight: 700;
+}
