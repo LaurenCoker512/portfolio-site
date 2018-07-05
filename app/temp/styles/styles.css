@@ -347,15 +347,11 @@ template {
 
 html {
     font-size: 62.5%;
-    height: 100%;
 }
 
 body {
-    background-image: url("../../assets/images/fabian-grohs-597395-unsplash.jpg");
-    background-size: cover;
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
-    height: 100%;
 }
 
 .fancy {
@@ -363,28 +359,132 @@ body {
     font-size: 3.5rem;
 }
 
-.contact {
-    background-color: #fff;
-    height: 40rem;
+.section-wrapper {
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
-.contact__icon {
-    color: #754f5b;
-}
-
-.footer {
-    
-}
-
-.header {
-    color: #fff;
-    margin-top: 10rem;
+.about {
+    margin-top: 4rem;
     text-align: center;
 }
 
+.about__wrapper {
+    display: flex;
+}
+
+.about__img {
+    width: 33%;
+}
+
+.about__img img {
+    width: 100%;
+}
+
+.about__section {
+    padding: 3rem;
+    width: 33%;
+}
+
+.footer {
+    height: 15rem;
+    text-align: center;
+}
+
+.footer__icon {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.large-hero {
+    background-image: url("../../assets/images/emile-perron-190221-unsplash.jpg");
+    background-size: cover;
+    color: #fff;
+    height: 80rem;
+}
+
+.large-hero__text {
+    margin-left: 10rem;
+    padding-top: 20rem;
+    width: 60rem;
+}
+
+.large-hero__btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 1rem;
+}
+
+.large-hero__btn:hover {
+    cursor: pointer;
+}
+
 .learning {
-    background-color: #fff;
-    height: 40rem;
+    display: flex;
+}
+
+.learning__description {
+    width: 50%;
+}
+
+.learning__floating {
+    position: relative;
+    width: 50%;
+}
+
+.learning__floating__skill {
+    font-size: 2.5rem;
+    position: absolute;
+    transition: all 0.2s linear;
+}
+
+.learning__floating__skill:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+.learning__floating__skill--mongo {
+    font-size: 2.7rem;
+    left: 9rem;
+    top: 17rem;
+}
+
+.learning__floating__skill--php {
+    font-size: 2.5rem;
+    left: 35rem;
+    top: 5rem;
+}
+
+.learning__floating__skill--mysql {
+    font-size: 2.2rem;
+    left: 15rem;
+    top: 7rem;
+}
+
+.learning__floating__skill--angular {
+    font-size: 2.1rem;
+    left: 19rem;
+    top: 26rem;
+}
+
+.learning__floating__skill--rest {
+    font-size: 2.1rem;
+    left: 30rem;
+    top: 22rem;
+}
+
+.learning__floating__skill--wordpress {
+    font-size: 2.1rem;
+    left: 37rem;
+    top: 14rem;
+}
+
+.learning__floating__skill--sass {
+    font-size: 2.1rem;
+    left: 42rem;
+    top: 20rem;
 }
 
 #loader {
@@ -392,38 +492,127 @@ body {
 }
 
 .projects {
-    background-color: #fff;
-    height: 40rem;
+    text-align: center;
+}
+
+.projects__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.projects__section {
+    margin: 0 2rem;
+    width: 35%;
+}
+
+.projects__img {
+    width: 25rem;
 }
 
 .skills {
-    background-color: #fff;
-    height: 40rem;
+    display: flex;
 }
 
-.slidr {
-    height: 60rem;
-    margin: 0 auto;
-    width: 90rem;
+.skills__description {
+    width: 50%;
 }
 
-.slidr__section {
-    background-color: #fff;
-    height: 100%;
-    padding: 2rem;
+.skills__floating {
     position: relative;
-    text-align: center;
-    width: 100%;
+    width: 50%;
 }
 
-.slidr__labels {
-    bottom: 1.2rem;
-    font-size: 1.3rem;
+.skills__floating__skill {
+    font-size: 2.5rem;
     position: absolute;
-    right: 5rem;
-    z-index: 10;
+    transition: all 0.2s linear;
 }
 
-.slidr__labels--active {
-    font-weight: 700;
+.skills__floating__skill:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+.skills__floating__skill--node {
+    font-size: 2.3rem;
+    left: 10rem;
+    top: 12rem;
+}
+
+.skills__floating__skill--html {
+    font-size: 2.9rem;
+    left: 14rem;
+    top: 7rem;
+}
+
+.skills__floating__skill--css {
+    font-size: 3rem;
+    left: 27rem;
+    top: 14rem;
+}
+
+.skills__floating__skill--js {
+    font-size: 2.7rem;
+    left: 5rem;
+    top: 20rem;
+}
+
+.skills__floating__skill--es6 {
+    font-size: 2.8rem;
+    left: 30rem;
+    top: 24rem;
+}
+
+.skills__floating__skill--react {
+    top: 29rem;
+    left: 11rem;
+}
+
+.skills__floating__skill--jquery {
+    font-size: 2.2rem;
+    left: 45rem;
+    top: 17rem;
+}
+
+.skills__floating__skill--python {
+    font-size: 2rem;
+    left: 34rem;
+    top: 3rem;
+}
+
+.skills__floating__skill--gulp {
+    font-size: 2rem;
+    left: 40rem;
+    top: 7rem;
+}
+
+.skills__floating__skill--git {
+    font-size: 2rem;
+    left: 38rem;
+    top: 34rem;
+}
+
+.skills__floating__skill--json {
+    font-size: 2rem;
+    left: 3rem;
+    top: 4rem;
+}
+
+.skills__floating__skill--npm {
+    font-size: 2rem;
+    left: 31rem;
+    top: 6rem;
+}
+
+.skills__floating__skill--ajax {
+    font-size: 2rem;
+    left: 38rem;
+    top: 23rem;
+}
+
+.skills__floating__skill--bem {
+    font-size: 2rem;
+    left: 42rem;
+    top: 30rem;
 }

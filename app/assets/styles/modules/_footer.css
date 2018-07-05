@@ -1,3 +1,9 @@
 .footer {
-    
+    height: 15rem;
+    text-align: center;
+}
+
+.footer__icon {
+    color: #fff;
+    font-size: 3rem;
 }

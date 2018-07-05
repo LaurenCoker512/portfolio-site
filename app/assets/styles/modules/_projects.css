@@ -1,4 +1,17 @@
 .projects {
-    background-color: #fff;
-    height: 40rem;
+    text-align: center;
+}
+
+.projects__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.projects__section {
+    margin: 0 2rem;
+    width: 35%;
+}
+
+.projects__img {
+    width: 25rem;
 }

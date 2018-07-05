@@ -8,8 +8,9 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Satisfy" rel="stylesheet">  
-    <link rel="stylesheet" href="./../node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Satisfy" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> 
+    <!-- <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css"> -->
     <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 
@@ -21,100 +22,118 @@
 
 <div id="content">
 
-    <header class="header">
+    <section class="large-hero">
+        <div class="large-hero__text section-wrapper">
             <h1>Hi! I'm <span class="fancy">Lauren</span>.</h1>
             <h2>I'm a front-end web developer absorbing new skills and always looking for a challenge.</h2>
-    </header>
+            <button class="large-hero__btn">More about me ...</button>
+        </div>
+    </section>
 
-    <div id="slidr" class="slidr">
-        <section class="about slidr__section" data-slidr="about">
-            <img src="assets/images/IMG_0042.jpg">
-
-            <div class="slidr__labels">
-                <div class="slidr__labels--active">About</div>
-                <div>Skills</div>
-                <div>Projects</div>
-                <div>Learning</div>
-                <div>Contact</div>
+    <section class="about section-wrapper">
+        <div class="about__wrapper">
+            <div class="about__section">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             </div>
-        </section>
+            <div class="about__img">
+                <img src="assets/images/IMG_0042.jpg">
+            </div>
+            <div class="about__section">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+        </div>
+        
+        <p>You can download a copy of my resume <a href="#">here</a>.</p>
 
-        <section class="skills slidr__section" data-slidr="skills">
+    </section>
+
+    <section class="skills section-wrapper">
+        <div class="skills__floating">
+            <span class="skills__floating__skill skills__floating__skill--node">Node.js</span>
+            <span class="skills__floating__skill skills__floating__skill--html">HTML5</span>
+            <span class="skills__floating__skill skills__floating__skill--css">CSS3</span>
+            <span class="skills__floating__skill skills__floating__skill--js">JavaScript</span>
+            <span class="skills__floating__skill skills__floating__skill--es6">ES6</span>
+            <span class="skills__floating__skill skills__floating__skill--react">React.js</span>
+            <span class="skills__floating__skill skills__floating__skill--jquery">jQuery</span>
+            <span class="skills__floating__skill skills__floating__skill--python">Python</span>
+            <span class="skills__floating__skill skills__floating__skill--gulp">Gulp</span>
+            <span class="skills__floating__skill skills__floating__skill--git">Git</span>
+            <span class="skills__floating__skill skills__floating__skill--json">JSON</span>
+            <span class="skills__floating__skill skills__floating__skill--npm">NPM</span>
+            <span class="skills__floating__skill skills__floating__skill--bem">BEM</span>
+            <span class="skills__floating__skill skills__floating__skill--ajax">AJAX</span>
+
+        </div>
+        <div class="skills__description">
+            <h2>Skills</h2>
             <h3>Front-End Development</h3>
             <p>I'm proficient in HTML, CSS, and JavaScript - including ES6. I integrate responsive, mobile-first design principles from the beginning of my workflow, and consider accessibility checks essential. I'm constantly solving new problems and picking up new skillsets, and am eager to expand my coding horizons.</p>
             <h3>Web Design</h3>
             <p>As an artist, I understand that the visual experience of a website is just as important as its content and functionality. I'm always looking for ways to make my websites works of art.</p>
             <h3>Fast, Self-Motivated Learner</h3>
             <p>I've learned web development independently from the beginning, so I can quickly adapt to new situations and challenges and learn whatever skills necessary to solve a problem.</p>
+        </div>
 
-            <div class="slidr__labels">
-                <div>About</div>
-                <div class="slidr__labels--active">Skills</div>
-                <div>Projects</div>
-                <div>Learning</div>
-                <div>Contact</div>
-            </div>
-        </section>
+    </section>
     
-        <section class="projects slidr__section" data-slidr="projects">
-    
-            <div class="projects__duuf">
+    <section class="projects section-wrapper">
+
+        <h2>Projects</h2>
+
+        <div class="projects__wrapper">
+            <div class="projects__section">
+                <a href="https://laurencoker512.github.io/duuf-site/"><img class="projects__img" src="assets/images/duuf-site-screenshot.png"></a>
+                <h3>Denton UU Fellowship Website</h3>
                 <p>I designed this website, my first full project, for a local church. Since my design was a complete re-do of their original website, I was tasked with coming up with a look that was visually pleasing as well as solving a variety of development challenges along the way.</p>
             </div>
-    
-            <div class="projects__enfant">
+                
+            <div class="projects__section">
+                <a href="#"><img class="projects__img" src="assets/images/enfant-site-screenshot.png"></a>
+                <h3>Wordpress Enfant Theme Clone</h3>
                 <p>For this project, I challenged myself to clone a paid WordPress theme, so that I could both learn from professional design patterns and mimic development outcomes in different ways than in the original code.</p>
             </div>
+        </div>
     
-            <div class="slidr__labels">
-                <div>About</div>
-                <div>Skills</div>
-                <div class="slidr__labels--active">Projects</div>
-                <div>Learning</div>
-                <div>Contact</div>
-            </div>
-        </section>
+        
     
-        <section class="learning slidr__section" data-slidr="learning">
+    </section>
     
-            <p>One of my favorite parts of web development is that there's always something new to learn!</p>
+    <section class="learning section-wrapper">
+
+        <div class="learning__description">
+            <h2>What I'm Learning Now</h2>
+            <p>One of my favorite parts of web development is that there's always something new to learn. I'm always looking into new topics and taking new classes to expand my skillset.</p>
+            <ul>
+
+            </ul>
             <p>I'm already very familiar with Node.js and Express, and am currently diving deep into both React and Angular.</p>
-    
-            <div class="slidr__labels">
-                <div>About</div>
-                <div>Skills</div>
-                <div>Projects</div>
-                <div class="slidr__labels--active">Learning</div>
-                <div>Contact</div>
-            </div>
-        </section>
-    
-        <section class="contact slidr__section" data-slidr="contact">
-            <p>Want to get in touch? I'd love to talk about my past and current projects and what I'm learning now!</p>
-            <a href="#"><i class="fas fa-envelope contact__icon"></i></a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Phone</a>
-            <a href="#">Github</a>
-
-            <div class="slidr__labels">
-                <div>About</div>
-                <div>Skills</div>
-                <div>Projects</div>
-                <div>Learning</div>
-                <div class="slidr__labels--active">Contact</div>
-            </div>
-        </section>
-
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
         
-    </div>
+        <div class="learning__floating">
+            <span class="learning__floating__skill learning__floating__skill--mongo">MongoDB</span>
+            <span class="learning__floating__skill learning__floating__skill--php">PHP</span>
+            <span class="learning__floating__skill learning__floating__skill--mysql">MySQL</span>
+            <span class="learning__floating__skill learning__floating__skill--angular">Angular.js</span>
+            <span class="learning__floating__skill learning__floating__skill--rest">REST</span>
+            <span class="learning__floating__skill learning__floating__skill--wordpress">Wordpress</span>
+            <span class="learning__floating__skill learning__floating__skill--sass">SASS</span>
+        </div>
+    
+    </section>
 
-    <footer class="footer">
-        
+    <footer class="footer section-wrapper">
+        <p>Want to get in touch? I'd love to talk about my past and current projects and what I'm learning now!</p>
+        <a href="#"><i class="fas fa-envelope footer__icon"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in footer__icon"></i></a>
+        <a href="#"><i class="fab fa-github footer__icon"></i></a>
+        <a href="tel:+19402979003">(940)297-9003</a>
+
     </footer>
 
 </div>
 
-<script src="assets/scripts/slidr.min.js"></script>
 <script src="temp/scripts/App.js"></script>
 
 </body>

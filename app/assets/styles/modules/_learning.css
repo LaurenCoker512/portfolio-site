@@ -1,4 +1,65 @@
 .learning {
-    background-color: #fff;
-    height: 40rem;
+    display: flex;
+}
+
+.learning__description {
+    width: 50%;
+}
+
+.learning__floating {
+    position: relative;
+    width: 50%;
+}
+
+.learning__floating__skill {
+    font-size: 2.5rem;
+    position: absolute;
+    transition: all 0.2s linear;
+}
+
+.learning__floating__skill:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.learning__floating__skill--mongo {
+    font-size: 2.7rem;
+    left: 9rem;
+    top: 17rem;
+}
+
+.learning__floating__skill--php {
+    font-size: 2.5rem;
+    left: 35rem;
+    top: 5rem;
+}
+
+.learning__floating__skill--mysql {
+    font-size: 2.2rem;
+    left: 15rem;
+    top: 7rem;
+}
+
+.learning__floating__skill--angular {
+    font-size: 2.1rem;
+    left: 19rem;
+    top: 26rem;
+}
+
+.learning__floating__skill--rest {
+    font-size: 2.1rem;
+    left: 30rem;
+    top: 22rem;
+}
+
+.learning__floating__skill--wordpress {
+    font-size: 2.1rem;
+    left: 37rem;
+    top: 14rem;
+}
+
+.learning__floating__skill--sass {
+    font-size: 2.1rem;
+    left: 42rem;
+    top: 20rem;
 }

@@ -1,4 +1,107 @@
 .skills {
-    background-color: #fff;
-    height: 40rem;
+    display: flex;
 }
+
+.skills__description {
+    width: 50%;
+}
+
+.skills__floating {
+    position: relative;
+    width: 50%;
+}
+
+.skills__floating__skill {
+    font-size: 2.5rem;
+    position: absolute;
+    transition: all 0.2s linear;
+}
+
+.skills__floating__skill:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.skills__floating__skill--node {
+    font-size: 2.3rem;
+    left: 10rem;
+    top: 12rem;
+}
+
+.skills__floating__skill--html {
+    font-size: 2.9rem;
+    left: 14rem;
+    top: 7rem;
+}
+
+.skills__floating__skill--css {
+    font-size: 3rem;
+    left: 27rem;
+    top: 14rem;
+}
+
+.skills__floating__skill--js {
+    font-size: 2.7rem;
+    left: 5rem;
+    top: 20rem;
+}
+
+.skills__floating__skill--es6 {
+    font-size: 2.8rem;
+    left: 30rem;
+    top: 24rem;
+}
+
+.skills__floating__skill--react {
+    top: 29rem;
+    left: 11rem;
+}
+
+.skills__floating__skill--jquery {
+    font-size: 2.2rem;
+    left: 45rem;
+    top: 17rem;
+}
+
+.skills__floating__skill--python {
+    font-size: 2rem;
+    left: 34rem;
+    top: 3rem;
+}
+
+.skills__floating__skill--gulp {
+    font-size: 2rem;
+    left: 40rem;
+    top: 7rem;
+}
+
+.skills__floating__skill--git {
+    font-size: 2rem;
+    left: 38rem;
+    top: 34rem;
+}
+
+.skills__floating__skill--json {
+    font-size: 2rem;
+    left: 3rem;
+    top: 4rem;
+}
+
+.skills__floating__skill--npm {
+    font-size: 2rem;
+    left: 31rem;
+    top: 6rem;
+}
+
+.skills__floating__skill--ajax {
+    font-size: 2rem;
+    left: 38rem;
+    top: 23rem;
+}
+
+.skills__floating__skill--bem {
+    font-size: 2rem;
+    left: 42rem;
+    top: 30rem;
+}
+

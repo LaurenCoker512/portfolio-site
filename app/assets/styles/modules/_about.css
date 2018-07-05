@@ -1,0 +1,21 @@
+.about {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.about__wrapper {
+    display: flex;
+}
+
+.about__img {
+    width: 33%;
+}
+
+.about__img img {
+    width: 100%;
+}
+
+.about__section {
+    padding: 3rem;
+    width: 33%;
+}

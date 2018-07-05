@@ -1,0 +1,23 @@
+.large-hero {
+    background-image: url("../../assets/images/emile-perron-190221-unsplash.jpg");
+    background-size: cover;
+    color: #fff;
+    height: 80rem;
+}
+
+.large-hero__text {
+    margin-left: 10rem;
+    padding-top: 20rem;
+    width: 60rem;
+}
+
+.large-hero__btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 1rem;
+}
+
+.large-hero__btn:hover {
+    cursor: pointer;
+}
