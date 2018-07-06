@@ -18,8 +18,19 @@ body {
 }
 
 .section-wrapper {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin: 0 auto;
+
+    /* @mixin atSmall {
+        width: 60rem;
+    } */
+
+    @mixin atMedium {
+        width: 90rem;
+    }
+
+    @mixin atLarge {
+        width: 130rem;
+    }
 }
 
 .section-title {

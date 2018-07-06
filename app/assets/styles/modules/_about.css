@@ -5,10 +5,21 @@
 
 .about__wrapper {
     display: flex;
+    flex-direction: column;
+
+    @mixin atMedium {
+        flex-direction: row;
+    }
 }
 
 .about__img {
-    width: 24%;
+    margin: 0 auto;
+    width: 20rem;
+
+    @mixin atMedium {
+        margin: auto;
+        width: 24%;
+    }
 }
 
 .about__img img {
@@ -19,5 +30,8 @@
 
 .about__section {
     padding: 3rem;
-    width: 38%;
+
+    @mixin atMedium {
+        width: 38%;
+    }
 }

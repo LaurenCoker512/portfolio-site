@@ -1,15 +1,24 @@
 .projects {
+    margin: 0 3rem;
     text-align: center;
 }
 
 .projects__wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+
+    @mixin atMedium {
+        flex-direction: row;
+    }
 }
 
 .projects__section {
     margin: 0 2rem;
-    width: 35%;
+
+    @mixin atMedium {
+        width: 35%;
+    }
 }
 
 .projects__img {

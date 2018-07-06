@@ -2,13 +2,31 @@
     background-image: url("../../assets/images/emile-perron-190221-unsplash.jpg");
     background-size: cover;
     color: #fff;
-    height: 80rem;
+    height: 70rem;
+
+    @mixin atMedium {
+        height: 80rem; 
+    }
+
+    @mixin atLarge {
+        height: 95rem; 
+    }
 }
 
 .large-hero__text {
-    margin-left: 10rem;
+    margin-left: 3rem;
     padding-top: 20rem;
-    width: 60rem;
+    width: 27rem;
+
+    @mixin atSmall {
+        margin-left: 8rem;
+        width: 35rem; 
+    }
+
+    @mixin atMedium {
+        margin-left: 10rem;
+        width: 60rem;
+    }
 }
 
 .large-hero__btn {

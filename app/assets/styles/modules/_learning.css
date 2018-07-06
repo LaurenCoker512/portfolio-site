@@ -1,14 +1,27 @@
 .learning {
     display: flex;
+    flex-direction: column;
+    margin: 0 3rem;
+
+    @mixin atMedium {
+        flex-direction: row;
+    }
 }
 
 .learning__description {
-    width: 50%;
+
+    @mixin atMedium {
+        width: 50%;
+    }
 }
 
 .learning__floating {
+    min-height: 40rem;
     position: relative;
-    width: 50%;
+
+    @mixin atMedium {
+        width: 50%;
+    }
 }
 
 .learning__floating__skill {
@@ -24,42 +37,99 @@
 
 .learning__floating__skill--mongo {
     font-size: 2.7rem;
-    left: 9rem;
+    left: 0;
     top: 17rem;
+
+    @mixin atMedium {
+        left: 9rem;
+    }
+}
+
+.learning__floating__skill--mongo:hover {
+    color: $mainPink;
 }
 
 .learning__floating__skill--php {
     font-size: 2.5rem;
-    left: 35rem;
+    left: 3rem;
     top: 5rem;
+
+    @mixin atMedium {
+        left: 35rem;
+    }
+}
+
+.learning__floating__skill--php:hover {
+    color: $blueGreen;
 }
 
 .learning__floating__skill--mysql {
     font-size: 2.2rem;
-    left: 15rem;
+    left: 10rem;
     top: 7rem;
+
+    @mixin atMedium {
+        left: 15rem;
+    }
+}
+
+.learning__floating__skill--mysql:hover {
+    color: $mainViolet;
 }
 
 .learning__floating__skill--angular {
     font-size: 2.1rem;
-    left: 19rem;
+    left: 8rem;
     top: 26rem;
+
+    @mixin atMedium {
+        left: 19rem;
+    }
+}
+
+.learning__floating__skill--angular:hover {
+    color: $blueGreen;
 }
 
 .learning__floating__skill--rest {
     font-size: 2.1rem;
-    left: 30rem;
-    top: 22rem;
+    left: 21rem;
+    top: 24rem;
+
+    @mixin atMedium {
+        left: 30rem;
+        top: 22rem;
+    }
+}
+
+.learning__floating__skill--rest:hover {
+    color: $mainPink;
 }
 
 .learning__floating__skill--wordpress {
     font-size: 2.1rem;
-    left: 37rem;
+    left: 16rem;
     top: 14rem;
+
+    @mixin atMedium {
+        left: 37rem;
+    }
+}
+
+.learning__floating__skill--wordpress:hover {
+    color: $blueGreen;
 }
 
 .learning__floating__skill--sass {
     font-size: 2.1rem;
-    left: 42rem;
+    left: 15rem;
     top: 20rem;
+
+    @mixin atMedium {
+        left: 42rem;
+    }
+}
+
+.learning__floating__skill--sass:hover {
+    color: $mainViolet;
 }
