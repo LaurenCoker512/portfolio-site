@@ -16,8 +16,11 @@
     border: 2px solid #fff;
     color: #fff;
     padding: 1rem;
+    transition: border 0.2s linear, color 0.4s linear;
 }
 
 .large-hero__btn:hover {
+    border: 2px solid $blueGreen;
+    color: $blueGreen;
     cursor: pointer;
 }

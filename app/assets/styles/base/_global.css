@@ -12,11 +12,18 @@ body {
 }
 
 .fancy {
-    font-family: 'Satisfy', cursive;
+    color: $blueGreen;
+    /* font-family: 'Satisfy', cursive; */
     font-size: 3.5rem;
 }
 
 .section-wrapper {
     margin-left: 5rem;
     margin-right: 5rem;
+}
+
+.section-title {
+    color: $blueGreen;
+    font-weight: 300;
+    text-transform: uppercase;
 }

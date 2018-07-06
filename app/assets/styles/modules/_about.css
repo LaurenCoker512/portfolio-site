@@ -8,14 +8,16 @@
 }
 
 .about__img {
-    width: 33%;
+    width: 24%;
 }
 
 .about__img img {
+    border: 1px solid transparent;
+    border-radius: 50%;
     width: 100%;
 }
 
 .about__section {
     padding: 3rem;
-    width: 33%;
+    width: 38%;
 }

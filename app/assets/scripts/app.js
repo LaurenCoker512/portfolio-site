@@ -1,18 +1,25 @@
 import $ from "jquery";
 
-//Smooth scrolling
+//Preloader
 
-var returnBtn = document.querySelector(".return-btn");
-var largeHero = document.querySelector(".large-hero");
-var largeHeroBottom = largeHero.offsetTop;
-
-function checkBtn() {
-    if (window.pageYOffset >= largeHeroBottom) {
-        returnBtn.classList.add("return-btn--revealed");
-    } else {
-        returnBtn.classList.remove("return-btn--revealed");
-    }
+document.onreadystatechange = () => {
+  var state = document.readyState;
+  if (state == 'interactive') {
+       document.getElementById('contents').style.visibility = "hidden";
+  } else if (state == 'complete') {
+      setTimeout(function(){
+          document.getElementById('load').style.opacity = "0";
+          document.getElementById('load__animation').style.opacity = "0";
+          document.getElementById('contents').style.visibility = "visible";
+      }, 2000);
+      setTimeout(function(){
+          document.getElementById('load').style.display = "none";
+          document.getElementById('load__animation').style.display = "none";
+      }, 2500)
+  }
 }
+
+//Smooth scrolling
 
 $(function() {
     // This will select everything with the class smoothScroll
@@ -37,3 +44,26 @@ $(function() {
       }
     });
   });
+
+//Title Typing
+
+function typeEffect(element, speed) {
+	var text = $(element).text();
+	$(element).html('');
+	
+	var i = 0;
+	var timer = setInterval(function() {
+					if (i < text.length) {
+						$(element).append(text.charAt(i));
+						i++;
+					} else {
+						clearInterval(timer);
+					}
+				}, speed);
+}
+
+const txt = document.querySelector(".fancy");
+setTimeout(() => {
+  typeEffect(txt, 150);
+}, 500);
+
