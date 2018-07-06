@@ -1,5 +1,27 @@
 import $ from "jquery";
 
+//Title Typing
+
+function typeEffect(element, speed, delay) {
+	var text = $(element).text();
+	$(element).html('');
+	
+  var i = 0;
+  
+  setTimeout(() => {
+    var timer = setInterval(function() {
+      if (i < text.length) {
+        $(element).append(text.charAt(i));
+        i++;
+      } else {
+        clearInterval(timer);
+      }
+    }, speed);
+  }, delay);
+}
+
+const txt = document.querySelector(".fancy");
+
 //Preloader
 
 document.onreadystatechange = () => {
@@ -7,17 +29,20 @@ document.onreadystatechange = () => {
   if (state == 'interactive') {
        document.getElementById('contents').style.visibility = "hidden";
   } else if (state == 'complete') {
-      setTimeout(function(){
+      setTimeout(() => {
           document.getElementById('load').style.opacity = "0";
           document.getElementById('load__animation').style.opacity = "0";
           document.getElementById('contents').style.visibility = "visible";
       }, 2000);
-      setTimeout(function(){
+      setTimeout(() => {
           document.getElementById('load').style.display = "none";
           document.getElementById('load__animation').style.display = "none";
-      }, 2500)
+      }, 2500);
+      setTimeout(() => {
+        typeEffect(txt, 200, 800);
+      }, 2000);
   }
-}
+};
 
 //Smooth scrolling
 
@@ -45,25 +70,5 @@ $(function() {
     });
   });
 
-//Title Typing
 
-function typeEffect(element, speed) {
-	var text = $(element).text();
-	$(element).html('');
-	
-	var i = 0;
-	var timer = setInterval(function() {
-					if (i < text.length) {
-						$(element).append(text.charAt(i));
-						i++;
-					} else {
-						clearInterval(timer);
-					}
-				}, speed);
-}
-
-const txt = document.querySelector(".fancy");
-setTimeout(() => {
-  typeEffect(txt, 150);
-}, 500);
 
