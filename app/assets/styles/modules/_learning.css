@@ -1,10 +1,13 @@
 .learning {
     display: flex;
     flex-direction: column;
-    margin: 0 3rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+    text-align: center;
 
     @mixin atMedium {
         flex-direction: row;
+        text-align: left;
     }
 }
 
@@ -16,8 +19,14 @@
 }
 
 .learning__floating {
+    margin: 0 auto;
     min-height: 40rem;
     position: relative;
+    width: 27rem;
+
+    @mixin atSmall {
+        width: 40rem;
+    }
 
     @mixin atMedium {
         width: 50%;
@@ -40,7 +49,7 @@
     left: 0;
     top: 17rem;
 
-    @mixin atMedium {
+    @mixin atSmall {
         left: 9rem;
     }
 }
@@ -54,7 +63,7 @@
     left: 3rem;
     top: 5rem;
 
-    @mixin atMedium {
+    @mixin atSmall {
         left: 35rem;
     }
 }
@@ -68,7 +77,7 @@
     left: 10rem;
     top: 7rem;
 
-    @mixin atMedium {
+    @mixin atSmall {
         left: 15rem;
     }
 }
@@ -81,6 +90,10 @@
     font-size: 2.1rem;
     left: 8rem;
     top: 26rem;
+
+    @mixin atSmall {
+        left: 0;
+    }
 
     @mixin atMedium {
         left: 19rem;
@@ -96,7 +109,7 @@
     left: 21rem;
     top: 24rem;
 
-    @mixin atMedium {
+    @mixin atSmall {
         left: 30rem;
         top: 22rem;
     }
@@ -111,8 +124,14 @@
     left: 16rem;
     top: 14rem;
 
+    @mixin atSmall {
+        left: 3rem;
+        top: 12rem;
+    }
+
     @mixin atMedium {
         left: 37rem;
+        top: 14rem;
     }
 }
 
@@ -125,7 +144,7 @@
     left: 15rem;
     top: 20rem;
 
-    @mixin atMedium {
+    @mixin atSmall {
         left: 42rem;
     }
 }

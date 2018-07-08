@@ -1,9 +1,37 @@
 .footer {
-    height: 15rem;
+    background-color: #222;
+    color: #fff;
+    font-weight: 300;
+    height: 16rem;
+    padding: 2rem;
     text-align: center;
+
+    @mixin atSmall {
+        height: 15rem; 
+    }
+
+    @mixin atMedium {
+        height: 12rem;
+    }
 }
 
 .footer__icon {
     color: #fff;
     font-size: 3rem;
+    padding: 0 1rem;
+    transition: all 0.2s linear;
+}
+
+.footer__icon:hover {
+    font-size: 3.2rem;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+.footer a:hover {
+    font-size: 1.7rem;
 }

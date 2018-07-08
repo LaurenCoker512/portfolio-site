@@ -390,6 +390,7 @@ body {
 
 .about {
     margin-top: 4rem;
+    padding: 0 4rem;
     text-align: center;
 }
 
@@ -436,13 +437,47 @@ body {
     }
 
 .footer {
-    height: 15rem;
+    background-color: #222;
+    color: #fff;
+    font-weight: 300;
+    height: 16rem;
+    padding: 2rem;
     text-align: center;
 }
+
+@media (min-width: 660px) {
+
+.footer {
+        height: 15rem
+}
+    }
+
+@media (min-width: 1042px) {
+
+.footer {
+        height: 12rem
+}
+    }
 
 .footer__icon {
     color: #fff;
     font-size: 3rem;
+    padding: 0 1rem;
+    transition: all 0.2s linear;
+}
+
+.footer__icon:hover {
+    font-size: 3.2rem;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+.footer a:hover {
+    font-size: 1.7rem;
 }
 
 .large-hero {
@@ -505,13 +540,16 @@ body {
 .learning {
     display: flex;
     flex-direction: column;
-    margin: 0 3rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+    text-align: center;
 }
 
 @media (min-width: 1042px) {
 
 .learning {
-        flex-direction: row
+        flex-direction: row;
+        text-align: left
 }
     }
 
@@ -523,9 +561,18 @@ body {
     }
 
 .learning__floating {
+    margin: 0 auto;
     min-height: 40rem;
     position: relative;
+    width: 27rem;
 }
+
+@media (min-width: 660px) {
+
+.learning__floating {
+        width: 40rem
+}
+    }
 
 @media (min-width: 1042px) {
 
@@ -552,7 +599,7 @@ body {
     top: 17rem;
 }
 
-@media (min-width: 1042px) {
+@media (min-width: 660px) {
 
 .learning__floating__skill--mongo {
         left: 9rem
@@ -569,7 +616,7 @@ body {
     top: 5rem;
 }
 
-@media (min-width: 1042px) {
+@media (min-width: 660px) {
 
 .learning__floating__skill--php {
         left: 35rem
@@ -586,7 +633,7 @@ body {
     top: 7rem;
 }
 
-@media (min-width: 1042px) {
+@media (min-width: 660px) {
 
 .learning__floating__skill--mysql {
         left: 15rem
@@ -602,6 +649,13 @@ body {
     left: 8rem;
     top: 26rem;
 }
+
+@media (min-width: 660px) {
+
+.learning__floating__skill--angular {
+        left: 0
+}
+    }
 
 @media (min-width: 1042px) {
 
@@ -620,7 +674,7 @@ body {
     top: 24rem;
 }
 
-@media (min-width: 1042px) {
+@media (min-width: 660px) {
 
 .learning__floating__skill--rest {
         left: 30rem;
@@ -638,10 +692,19 @@ body {
     top: 14rem;
 }
 
+@media (min-width: 660px) {
+
+.learning__floating__skill--wordpress {
+        left: 3rem;
+        top: 12rem
+}
+    }
+
 @media (min-width: 1042px) {
 
 .learning__floating__skill--wordpress {
-        left: 37rem
+        left: 37rem;
+        top: 14rem
 }
     }
 
@@ -655,7 +718,7 @@ body {
     top: 20rem;
 }
 
-@media (min-width: 1042px) {
+@media (min-width: 660px) {
 
 .learning__floating__skill--sass {
         left: 42rem
@@ -837,20 +900,24 @@ body {
   }
 
 .projects {
-    margin: 0 3rem;
+    margin: 0 auto;
+    padding: 0 4rem;
     text-align: center;
 }
 
 .projects__wrapper {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 2rem;
 }
 
 @media (min-width: 1042px) {
 
 .projects__wrapper {
-        flex-direction: row
+        flex-direction: row;
+        justify-content: space-around
 }
     }
 
@@ -873,12 +940,15 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding: 0 4rem;
+    text-align: center;
 }
 
 @media (min-width: 1042px) {
 
 .skills {
-        flex-direction: row
+        flex-direction: row;
+        text-align: left
 }
     }
 
@@ -894,10 +964,18 @@ body {
     }
 
 .skills__floating {
+    margin: 0 auto;
     min-height: 40rem;
     position: relative;
-    width: 100%;
+    width: 27rem;
 }
+
+@media (min-width: 660px) {
+
+.skills__floating {
+        width: 40rem
+}
+    }
 
 @media (min-width: 1042px) {
 
@@ -924,7 +1002,21 @@ body {
     top: 12rem;
 }
 
+@media (min-width: 660px) {
+
+.skills__floating__skill--node {
+        left: 6rem
+}
+    }
+
 @media (min-width: 1042px) {
+
+.skills__floating__skill--node {
+        left: 3rem
+}
+    }
+
+@media (min-width: 1424px) {
 
 .skills__floating__skill--node {
         left: 10rem
@@ -941,6 +1033,20 @@ body {
     top: 7rem;
 }
 
+@media (min-width: 660px) {
+
+.skills__floating__skill--html {
+        left: 14rem
+}
+    }
+
+@media (min-width: 1042px) {
+
+.skills__floating__skill--html {
+        left: 7rem
+}
+    }
+
 @media (min-width: 1424px) {
 
 .skills__floating__skill--html {
@@ -954,14 +1060,30 @@ body {
 
 .skills__floating__skill--css {
     font-size: 3rem;
-    left: 15rem;
-    top: 14rem;
+    left: 12rem;
+    top: 15rem;
 }
+
+@media (min-width: 660px) {
+
+.skills__floating__skill--css {
+        left: 27rem
+}
+    }
+
+@media (min-width: 1042px) {
+
+.skills__floating__skill--css {
+        left: 18rem;
+        top: 17rem
+}
+    }
 
 @media (min-width: 1424px) {
 
 .skills__floating__skill--css {
-        left: 27rem
+        left: 27rem;
+        top: 14rem
 }
     }
 
@@ -971,9 +1093,23 @@ body {
 
 .skills__floating__skill--js {
     font-size: 2.7rem;
-    left: 2rem;
+    left: 0;
     top: 20rem;
 }
+
+@media (min-width: 660px) {
+
+.skills__floating__skill--js {
+        left: 5rem
+}
+    }
+
+@media (min-width: 1042px) {
+
+.skills__floating__skill--js {
+        left: 2rem
+}
+    }
 
 @media (min-width: 1424px) {
 
@@ -992,6 +1128,22 @@ body {
     top: 27rem;
 }
 
+@media (min-width: 660px) {
+
+.skills__floating__skill--es6 {
+        left: 25rem;
+        top: 26rem
+}
+    }
+
+@media (min-width: 1042px) {
+
+.skills__floating__skill--es6 {
+        left: 27rem;
+        top: 32rem
+}
+    }
+
 @media (min-width: 1424px) {
 
 .skills__floating__skill--es6 {
@@ -1009,15 +1161,52 @@ body {
     left: 11rem;
 }
 
+@media (min-width: 660px) {
+
+.skills__floating__skill--react {
+        top: 33rem
+}
+    }
+
+@media (min-width: 1042px) {
+
+.skills__floating__skill--react {
+        top: 35rem
+}
+    }
+
+@media (min-width: 1424px) {
+
+.skills__floating__skill--react {
+        top: 29rem
+}
+    }
+
 .skills__floating__skill--react:hover {
     color: #d3377a;
 }
 
 .skills__floating__skill--jquery {
     font-size: 2.2rem;
-    left: 21rem;
+    left: 19rem;
     top: 19rem;
 }
+
+@media (min-width: 660px) {
+
+.skills__floating__skill--jquery {
+        left: 38rem;
+        top: 17rem
+}
+    }
+
+@media (min-width: 1042px) {
+
+.skills__floating__skill--jquery {
+        left: 25rem;
+        top: 23rem
+}
+    }
 
 @media (min-width: 1424px) {
 
@@ -1037,6 +1226,20 @@ body {
     top: 3rem;
 }
 
+@media (min-width: 660px) {
+
+.skills__floating__skill--python {
+        left: 34rem
+}
+    }
+
+@media (min-width: 1042px) {
+
+.skills__floating__skill--python {
+        left: 14rem
+}
+    }
+
 @media (min-width: 1424px) {
 
 .skills__floating__skill--python {
@@ -1053,6 +1256,22 @@ body {
     left: 18rem;
     top: 9rem;
 }
+
+@media (min-width: 660px) {
+
+.skills__floating__skill--gulp {
+        left: 40rem;
+        top: 7rem
+}
+    }
+
+@media (min-width: 1042px) {
+
+.skills__floating__skill--gulp {
+        left: 23rem;
+        top: 12rem
+}
+    }
 
 @media (min-width: 1424px) {
 
@@ -1072,10 +1291,27 @@ body {
     top: 34rem;
 }
 
+@media (min-width: 660px) {
+
+.skills__floating__skill--git {
+        left: 37rem;
+        top: 34rem
+}
+    }
+
+@media (min-width: 1042px) {
+
+.skills__floating__skill--git {
+        left: 14rem;
+        top: 43rem
+}
+    }
+
 @media (min-width: 1424px) {
 
 .skills__floating__skill--git {
-        left: 38rem
+        left: 38rem;
+        top: 34rem
 }
     }
 
@@ -1088,6 +1324,20 @@ body {
     left: 0;
     top: 4rem;
 }
+
+@media (min-width: 660px) {
+
+.skills__floating__skill--json {
+        left: 3rem
+}
+    }
+
+@media (min-width: 1042px) {
+
+.skills__floating__skill--json {
+        left: 0
+}
+    }
 
 @media (min-width: 1424px) {
 
@@ -1106,10 +1356,27 @@ body {
     top: 6rem;
 }
 
+@media (min-width: 660px) {
+
+.skills__floating__skill--npm {
+        left: 29rem;
+        top: 8rem
+}
+    }
+
+@media (min-width: 1042px) {
+
+.skills__floating__skill--npm {
+        left: 26rem;
+        top: 8rem
+}
+    }
+
 @media (min-width: 1424px) {
 
 .skills__floating__skill--npm {
-        left: 31rem
+        left: 31rem;
+        top: 6rem
 }
     }
 
@@ -1123,10 +1390,27 @@ body {
     top: 23rem;
 }
 
+@media (min-width: 660px) {
+
+.skills__floating__skill--ajax {
+        left: 36rem;
+        top: 23rem
+}
+    }
+
+@media (min-width: 1042px) {
+
+.skills__floating__skill--ajax {
+        left: 19rem;
+        top: 28rem
+}
+    }
+
 @media (min-width: 1424px) {
 
 .skills__floating__skill--ajax {
-        left: 38rem
+        left: 38rem;
+        top: 23rem
 }
     }
 
@@ -1136,7 +1420,7 @@ body {
 
 .skills__floating__skill--bem {
     font-size: 2rem;
-    left: 4rem;
+    left: 0;
     top: 30rem;
 }
 

@@ -2,9 +2,12 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding: 0 4rem;
+    text-align: center;
 
     @mixin atMedium {
         flex-direction: row;
+        text-align: left;
     }
 }
 
@@ -17,9 +20,14 @@
 }
 
 .skills__floating {
+    margin: 0 auto;
     min-height: 40rem;
     position: relative;
-    width: 100%;
+    width: 27rem;
+
+    @mixin atSmall {
+        width: 40rem;
+    }
 
     @mixin atMedium {
         width: 50%;
@@ -42,7 +50,15 @@
     left: 3rem;
     top: 12rem;
 
+    @mixin atSmall {
+        left: 6rem;
+    }
+
     @mixin atMedium {
+        left: 3rem;
+    }
+
+    @mixin atLarge {
         left: 10rem;
     }
 }
@@ -56,6 +72,14 @@
     left: 7rem;
     top: 7rem;
 
+    @mixin atSmall {
+        left: 14rem;
+    }
+
+    @mixin atMedium {
+        left: 7rem;
+    }
+
     @mixin atLarge {
         left: 14rem;
     }
@@ -67,11 +91,21 @@
 
 .skills__floating__skill--css {
     font-size: 3rem;
-    left: 15rem;
-    top: 14rem;
+    left: 12rem;
+    top: 15rem;
+
+    @mixin atSmall {
+        left: 27rem;
+    }
+
+    @mixin atMedium {
+        left: 18rem;
+        top: 17rem;
+    }
 
     @mixin atLarge {
         left: 27rem;
+        top: 14rem;
     }
 }
 
@@ -81,8 +115,16 @@
 
 .skills__floating__skill--js {
     font-size: 2.7rem;
-    left: 2rem;
+    left: 0;
     top: 20rem;
+
+    @mixin atSmall {
+        left: 5rem;
+    }
+
+    @mixin atMedium {
+        left: 2rem;
+    }
 
     @mixin atLarge {
         left: 5rem;
@@ -98,6 +140,16 @@
     left: 21rem;
     top: 27rem;
 
+    @mixin atSmall {
+        left: 25rem;
+        top: 26rem;
+    }
+
+    @mixin atMedium {
+        left: 27rem;
+        top: 32rem;
+    }
+
     @mixin atLarge {
         left: 30rem;
         top: 24rem;
@@ -111,6 +163,18 @@
 .skills__floating__skill--react {
     top: 29rem;
     left: 11rem;
+
+    @mixin atSmall {
+        top: 33rem;
+    }
+
+    @mixin atMedium {
+        top: 35rem;
+    }
+
+    @mixin atLarge {
+        top: 29rem;
+    }
 }
 
 .skills__floating__skill--react:hover {
@@ -119,8 +183,18 @@
 
 .skills__floating__skill--jquery {
     font-size: 2.2rem;
-    left: 21rem;
+    left: 19rem;
     top: 19rem;
+
+    @mixin atSmall {
+        left: 38rem;
+        top: 17rem;
+    }
+
+    @mixin atMedium {
+        left: 25rem;
+        top: 23rem;
+    }
 
     @mixin atLarge {
         left: 45rem;
@@ -137,6 +211,14 @@
     left: 14rem;
     top: 3rem;
 
+    @mixin atSmall {
+        left: 34rem;
+    }
+
+    @mixin atMedium {
+        left: 14rem;
+    }
+
     @mixin atLarge {
         left: 34rem;
     }
@@ -150,6 +232,16 @@
     font-size: 2rem;
     left: 18rem;
     top: 9rem;
+
+    @mixin atSmall {
+        left: 40rem;
+        top: 7rem;
+    }
+
+    @mixin atMedium {
+        left: 23rem;
+        top: 12rem;
+    }
 
     @mixin atLarge {
         left: 40rem;
@@ -166,8 +258,19 @@
     left: 14rem;
     top: 34rem;
 
+    @mixin atSmall {
+        left: 37rem;
+        top: 34rem;
+    }
+
+    @mixin atMedium {
+        left: 14rem;
+        top: 43rem;
+    }
+
     @mixin atLarge {
         left: 38rem;
+        top: 34rem;
     }
 }
 
@@ -179,6 +282,14 @@
     font-size: 2rem;
     left: 0;
     top: 4rem;
+
+    @mixin atSmall {
+        left: 3rem;
+    }
+
+    @mixin atMedium {
+        left: 0;
+    }
 
     @mixin atLarge {
         left: 3rem;
@@ -194,8 +305,19 @@
     left: 22rem;
     top: 6rem;
 
+    @mixin atSmall {
+        left: 29rem;
+        top: 8rem;
+    }
+
+    @mixin atMedium {
+        left: 26rem;
+        top: 8rem;
+    }
+
     @mixin atLarge {
         left: 31rem;
+        top: 6rem;
     }
 }
 
@@ -208,8 +330,19 @@
     left: 19rem;
     top: 23rem;
 
+    @mixin atSmall {
+        left: 36rem;
+        top: 23rem;
+    }
+
+    @mixin atMedium {
+        left: 19rem;
+        top: 28rem;
+    }
+
     @mixin atLarge {
         left: 38rem;
+        top: 23rem;
     }
 }
 
@@ -219,7 +352,7 @@
 
 .skills__floating__skill--bem {
     font-size: 2rem;
-    left: 4rem;
+    left: 0;
     top: 30rem;
 
     @mixin atLarge {

@@ -1,15 +1,19 @@
 .projects {
-    margin: 0 3rem;
+    margin: 0 auto;
+    padding: 0 4rem;
     text-align: center;
 }
 
 .projects__wrapper {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 2rem;
 
     @mixin atMedium {
         flex-direction: row;
+        justify-content: space-around;
     }
 }
 
