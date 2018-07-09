@@ -12,6 +12,7 @@
     padding-top: 2rem;
 
     @mixin atMedium {
+        align-items: flex-start;
         flex-direction: row;
         justify-content: space-around;
     }
@@ -19,6 +20,7 @@
 
 .projects__section {
     margin: 0 2rem;
+    text-align: left;
 
     @mixin atMedium {
         width: 35%;

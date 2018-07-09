@@ -31,8 +31,13 @@
 
 .about__section {
     padding: 3rem;
+    text-align: left;
 
     @mixin atMedium {
         width: 38%;
     }
+}
+
+.about p a {
+    text-decoration: none;
 }

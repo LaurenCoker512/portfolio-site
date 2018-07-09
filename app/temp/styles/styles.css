@@ -427,6 +427,7 @@ body {
 
 .about__section {
     padding: 3rem;
+    text-align: left;
 }
 
 @media (min-width: 1042px) {
@@ -435,6 +436,10 @@ body {
         width: 38%
 }
     }
+
+.about p a {
+    text-decoration: none;
+}
 
 .footer {
     background-color: #222;
@@ -916,6 +921,7 @@ body {
 @media (min-width: 1042px) {
 
 .projects__wrapper {
+        align-items: flex-start;
         flex-direction: row;
         justify-content: space-around
 }
@@ -923,6 +929,7 @@ body {
 
 .projects__section {
     margin: 0 2rem;
+    text-align: left;
 }
 
 @media (min-width: 1042px) {
