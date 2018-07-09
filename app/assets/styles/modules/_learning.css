@@ -18,6 +18,10 @@
     }
 }
 
+.learning__description p {
+    text-align: left;
+}
+
 .learning__floating {
     margin: 0 auto;
     min-height: 40rem;

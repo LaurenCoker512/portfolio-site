@@ -19,6 +19,10 @@
     }
 }
 
+.skills__description p {
+    text-align: left;
+}
+
 .skills__floating {
     margin: 0 auto;
     min-height: 40rem;

@@ -508,7 +508,7 @@ body {
 
 .large-hero__text {
     margin-left: 3rem;
-    padding-top: 20rem;
+    padding-top: 12rem;
     width: 27rem;
 }
 
@@ -516,6 +516,7 @@ body {
 
 .large-hero__text {
         margin-left: 8rem;
+        padding-top: 20rem;
         width: 35rem
 }
     }
@@ -564,6 +565,10 @@ body {
         width: 50%
 }
     }
+
+.learning__description p {
+    text-align: left;
+}
 
 .learning__floating {
     margin: 0 auto;
@@ -929,7 +934,6 @@ body {
 
 .projects__section {
     margin: 0 2rem;
-    text-align: left;
 }
 
 @media (min-width: 1042px) {
@@ -938,6 +942,18 @@ body {
         width: 35%
 }
     }
+
+.projects__section p {
+    text-align: left;
+}
+
+.projects__section p a {
+    text-decoration: none;
+}
+
+.projects__section ul {
+    text-align: left;
+}
 
 .projects__img {
     width: 25rem;
@@ -969,6 +985,10 @@ body {
         width: 50%
 }
     }
+
+.skills__description p {
+    text-align: left;
+}
 
 .skills__floating {
     margin: 0 auto;
