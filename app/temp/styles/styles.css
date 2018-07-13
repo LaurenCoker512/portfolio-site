@@ -446,6 +446,7 @@ body {
     color: #fff;
     font-weight: 300;
     height: 16rem;
+    margin-top: 4rem;
     padding: 2rem;
     text-align: center;
 }
@@ -546,7 +547,7 @@ body {
 .learning {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
     padding: 0 4rem;
     text-align: center;
 }
@@ -737,6 +738,24 @@ body {
 
 .learning__floating__skill--sass:hover {
     color: #b47eb3;
+}
+
+.learning__floating__skill--linux {
+    font-size: 2.3rem;
+    left: 2rem;
+    top: 11rem;
+}
+
+@media (min-width: 660px) {
+
+.learning__floating__skill--linux {
+        left: 37rem;
+        top: 25rem
+}
+    }
+
+.learning__floating__skill--linux:hover {
+    color: #419b85;
 }
 
 /* Loader Styles */

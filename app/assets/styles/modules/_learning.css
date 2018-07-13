@@ -1,7 +1,7 @@
 .learning {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
     padding: 0 4rem;
     text-align: center;
 
@@ -155,4 +155,19 @@
 
 .learning__floating__skill--sass:hover {
     color: $mainViolet;
+}
+
+.learning__floating__skill--linux {
+    font-size: 2.3rem;
+    left: 2rem;
+    top: 11rem;
+
+    @mixin atSmall {
+        left: 37rem;
+        top: 25rem;
+    }
+}
+
+.learning__floating__skill--linux:hover {
+    color: $blueGreen;
 }
