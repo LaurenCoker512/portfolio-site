@@ -210,7 +210,7 @@
     color: $blueGreen;
 }
 
-.skills__floating__skill--python {
+.skills__floating__skill--php {
     font-size: 2rem;
     left: 14rem;
     top: 3rem;
@@ -228,7 +228,7 @@
     }
 }
 
-.skills__floating__skill--python:hover {
+.skills__floating__skill--php:hover {
     color: $mainViolet;
 }
 
@@ -321,7 +321,7 @@
 
     @mixin atLarge {
         left: 31rem;
-        top: 6rem;
+        top: 8rem;
     }
 }
 
@@ -366,5 +366,106 @@
 
 .skills__floating__skill--bem:hover {
     color: $mainViolet;
+}
+
+.skills__floating__skill--sass {
+    font-size: 2.2rem;
+    left: 3rem;
+    top: 38rem;
+
+    @mixin atLarge {
+        left: 30rem;
+        top: 30rem;
+    }
+}
+
+.skills__floating__skill--sass:hover {
+    color: $mainPink;
+}
+
+.skills__floating__skill--webpack {
+    font-size: 2.3rem;
+    left: 16rem;
+    top: 37rem;
+
+    @mixin atSmall {
+        left: 21rem;
+        top: 36rem;
+    }
+
+    @mixin atMedium {
+        left: 0;
+        top: 33rem;
+    }
+
+    @mixin atLarge {
+        left: 20rem;
+    }
+}
+
+.skills__floating__skill--webpack:hover {
+    color: $mainViolet;
+}
+
+.skills__floating__skill--mysql {
+    font-size: 2.4rem;
+    left: 10rem;
+    top: 25rem;
+
+    @mixin atSmall {
+        top: 26rem;
+    }
+
+    @mixin atMedium {
+        left: 8rem;
+        top: 28rem;
+    }
+
+    @mixin atLarge {
+        font-size: 2.2rem;
+        left: 22rem;
+        top: 20rem;
+    }
+}
+
+.skills__floating__skill--mysql:hover {
+    color: $mainViolet;
+}
+
+.skills__floating__skill--mongo {
+    font-size: 2.4rem;
+    left: -2rem;
+    top: 16rem;
+
+    @mixin atSmall {
+        left: 0;
+    }
+
+    @mixin atLarge {
+        left: 40rem;
+        top: 12rem;
+    }
+}
+
+.skills__floating__skill--mongo:hover {
+    color: $blueGreen;
+}
+
+.skills__floating__skill--redux {
+    font-size: 2.3rem;
+    left: -2rem;
+    top: 25rem;
+
+    @mixin atMedium {
+        left: 0;
+    }
+
+    @mixin atLarge {
+        left: 44rem;
+    }
+}
+
+.skills__floating__skill--redux:hover {
+    color: $blueGreen;
 }
 

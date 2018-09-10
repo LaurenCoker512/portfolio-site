@@ -545,8 +545,8 @@ body {
 }
 
 .learning {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     margin: 0 auto 2rem auto;
     padding: 0 4rem;
     text-align: center;
@@ -555,42 +555,36 @@ body {
 @media (min-width: 1042px) {
 
 .learning {
-        flex-direction: row;
+        /* flex-direction: row; */
         text-align: left
 }
     }
 
-@media (min-width: 1042px) {
+/* .learning__description {
 
-.learning__description {
-        width: 50%
-}
+    @mixin atMedium {
+        width: 50%;
     }
+} */
 
 .learning__description p {
     text-align: left;
 }
 
-.learning__floating {
+/* .learning__floating {
     margin: 0 auto;
     min-height: 40rem;
     position: relative;
     width: 27rem;
-}
 
-@media (min-width: 660px) {
-
-.learning__floating {
-        width: 40rem
-}
+    @mixin atSmall {
+        width: 40rem;
     }
 
-@media (min-width: 1042px) {
-
-.learning__floating {
-        width: 50%
-}
+    @mixin atMedium {
+        width: 50%;
     }
+}
 
 .learning__floating__skill {
     font-size: 2.5rem;
@@ -600,163 +594,132 @@ body {
 
 .learning__floating__skill:hover {
     cursor: pointer;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .learning__floating__skill--mongo {
     font-size: 2.7rem;
     left: 0;
     top: 17rem;
-}
 
-@media (min-width: 660px) {
-
-.learning__floating__skill--mongo {
-        left: 9rem
-}
+    @mixin atSmall {
+        left: 9rem;
     }
+}
 
 .learning__floating__skill--mongo:hover {
-    color: #d3377a;
+    color: $mainPink;
 }
 
 .learning__floating__skill--php {
     font-size: 2.5rem;
     left: 3rem;
     top: 5rem;
-}
 
-@media (min-width: 660px) {
-
-.learning__floating__skill--php {
-        left: 35rem
-}
+    @mixin atSmall {
+        left: 35rem;
     }
+}
 
 .learning__floating__skill--php:hover {
-    color: #419b85;
+    color: $blueGreen;
 }
 
 .learning__floating__skill--mysql {
     font-size: 2.2rem;
     left: 10rem;
     top: 7rem;
-}
 
-@media (min-width: 660px) {
-
-.learning__floating__skill--mysql {
-        left: 15rem
-}
+    @mixin atSmall {
+        left: 15rem;
     }
+}
 
 .learning__floating__skill--mysql:hover {
-    color: #b47eb3;
+    color: $mainViolet;
 }
 
 .learning__floating__skill--angular {
     font-size: 2.1rem;
     left: 8rem;
     top: 26rem;
-}
 
-@media (min-width: 660px) {
-
-.learning__floating__skill--angular {
-        left: 0
-}
+    @mixin atSmall {
+        left: 0;
     }
 
-@media (min-width: 1042px) {
-
-.learning__floating__skill--angular {
-        left: 19rem
-}
+    @mixin atMedium {
+        left: 19rem;
     }
+}
 
 .learning__floating__skill--angular:hover {
-    color: #419b85;
+    color: $blueGreen;
 }
 
 .learning__floating__skill--rest {
     font-size: 2.1rem;
     left: 21rem;
     top: 24rem;
-}
 
-@media (min-width: 660px) {
-
-.learning__floating__skill--rest {
+    @mixin atSmall {
         left: 30rem;
-        top: 22rem
-}
+        top: 22rem;
     }
+}
 
 .learning__floating__skill--rest:hover {
-    color: #d3377a;
+    color: $mainPink;
 }
 
 .learning__floating__skill--wordpress {
     font-size: 2.1rem;
     left: 16rem;
     top: 14rem;
-}
 
-@media (min-width: 660px) {
-
-.learning__floating__skill--wordpress {
+    @mixin atSmall {
         left: 3rem;
-        top: 12rem
-}
+        top: 12rem;
     }
 
-@media (min-width: 1042px) {
-
-.learning__floating__skill--wordpress {
+    @mixin atMedium {
         left: 37rem;
-        top: 14rem
-}
+        top: 14rem;
     }
+}
 
 .learning__floating__skill--wordpress:hover {
-    color: #419b85;
+    color: $blueGreen;
 }
 
 .learning__floating__skill--sass {
     font-size: 2.1rem;
     left: 15rem;
     top: 20rem;
-}
 
-@media (min-width: 660px) {
-
-.learning__floating__skill--sass {
-        left: 42rem
-}
+    @mixin atSmall {
+        left: 42rem;
     }
+}
 
 .learning__floating__skill--sass:hover {
-    color: #b47eb3;
+    color: $mainViolet;
 }
 
 .learning__floating__skill--linux {
     font-size: 2.3rem;
     left: 2rem;
     top: 11rem;
-}
 
-@media (min-width: 660px) {
-
-.learning__floating__skill--linux {
+    @mixin atSmall {
         left: 37rem;
-        top: 25rem
-}
+        top: 25rem;
     }
+}
 
 .learning__floating__skill--linux:hover {
-    color: #419b85;
-}
+    color: $blueGreen;
+} */
 
 /* Loader Styles */
 
@@ -1266,7 +1229,7 @@ body {
     color: #419b85;
 }
 
-.skills__floating__skill--python {
+.skills__floating__skill--php {
     font-size: 2rem;
     left: 14rem;
     top: 3rem;
@@ -1274,26 +1237,26 @@ body {
 
 @media (min-width: 660px) {
 
-.skills__floating__skill--python {
+.skills__floating__skill--php {
         left: 34rem
 }
     }
 
 @media (min-width: 1042px) {
 
-.skills__floating__skill--python {
+.skills__floating__skill--php {
         left: 14rem
 }
     }
 
 @media (min-width: 1424px) {
 
-.skills__floating__skill--python {
+.skills__floating__skill--php {
         left: 34rem
 }
     }
 
-.skills__floating__skill--python:hover {
+.skills__floating__skill--php:hover {
     color: #b47eb3;
 }
 
@@ -1422,7 +1385,7 @@ body {
 
 .skills__floating__skill--npm {
         left: 31rem;
-        top: 6rem
+        top: 8rem
 }
     }
 
@@ -1479,4 +1442,138 @@ body {
 
 .skills__floating__skill--bem:hover {
     color: #b47eb3;
+}
+
+.skills__floating__skill--sass {
+    font-size: 2.2rem;
+    left: 3rem;
+    top: 38rem;
+}
+
+@media (min-width: 1424px) {
+
+.skills__floating__skill--sass {
+        left: 30rem;
+        top: 30rem
+}
+    }
+
+.skills__floating__skill--sass:hover {
+    color: #d3377a;
+}
+
+.skills__floating__skill--webpack {
+    font-size: 2.3rem;
+    left: 16rem;
+    top: 37rem;
+}
+
+@media (min-width: 660px) {
+
+.skills__floating__skill--webpack {
+        left: 21rem;
+        top: 36rem
+}
+    }
+
+@media (min-width: 1042px) {
+
+.skills__floating__skill--webpack {
+        left: 0;
+        top: 33rem
+}
+    }
+
+@media (min-width: 1424px) {
+
+.skills__floating__skill--webpack {
+        left: 20rem
+}
+    }
+
+.skills__floating__skill--webpack:hover {
+    color: #b47eb3;
+}
+
+.skills__floating__skill--mysql {
+    font-size: 2.4rem;
+    left: 10rem;
+    top: 25rem;
+}
+
+@media (min-width: 660px) {
+
+.skills__floating__skill--mysql {
+        top: 26rem
+}
+    }
+
+@media (min-width: 1042px) {
+
+.skills__floating__skill--mysql {
+        left: 8rem;
+        top: 28rem
+}
+    }
+
+@media (min-width: 1424px) {
+
+.skills__floating__skill--mysql {
+        font-size: 2.2rem;
+        left: 22rem;
+        top: 20rem
+}
+    }
+
+.skills__floating__skill--mysql:hover {
+    color: #b47eb3;
+}
+
+.skills__floating__skill--mongo {
+    font-size: 2.4rem;
+    left: -2rem;
+    top: 16rem;
+}
+
+@media (min-width: 660px) {
+
+.skills__floating__skill--mongo {
+        left: 0
+}
+    }
+
+@media (min-width: 1424px) {
+
+.skills__floating__skill--mongo {
+        left: 40rem;
+        top: 12rem
+}
+    }
+
+.skills__floating__skill--mongo:hover {
+    color: #419b85;
+}
+
+.skills__floating__skill--redux {
+    font-size: 2.3rem;
+    left: -2rem;
+    top: 25rem;
+}
+
+@media (min-width: 1042px) {
+
+.skills__floating__skill--redux {
+        left: 0
+}
+    }
+
+@media (min-width: 1424px) {
+
+.skills__floating__skill--redux {
+        left: 44rem
+}
+    }
+
+.skills__floating__skill--redux:hover {
+    color: #419b85;
 }

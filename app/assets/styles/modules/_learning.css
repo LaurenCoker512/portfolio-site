@@ -1,28 +1,28 @@
 .learning {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     margin: 0 auto 2rem auto;
     padding: 0 4rem;
     text-align: center;
 
     @mixin atMedium {
-        flex-direction: row;
+        /* flex-direction: row; */
         text-align: left;
     }
 }
 
-.learning__description {
+/* .learning__description {
 
     @mixin atMedium {
         width: 50%;
     }
-}
+} */
 
 .learning__description p {
     text-align: left;
 }
 
-.learning__floating {
+/* .learning__floating {
     margin: 0 auto;
     min-height: 40rem;
     position: relative;
@@ -170,4 +170,4 @@
 
 .learning__floating__skill--linux:hover {
     color: $blueGreen;
-}
+} */
